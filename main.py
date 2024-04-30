@@ -5,7 +5,7 @@ from pytube import YouTube, Playlist
 import threading
 import time
 
-# Crear la ventana principal
+# Ventana principal
 window = tk.Tk()
 window.title("YouTube Downloader")
 
@@ -33,7 +33,7 @@ folder_icon = ImageTk.PhotoImage(folder_icon)
 # Función para seleccionar el directorio
 def choose_directory():
     directory = filedialog.askdirectory(title="Seleccionar destino")
-    if directory:  # Si el usuario selecciona un directorio, actualizar la variable
+    if directory: 
         destination_var.set(directory)
 
 # Función para actualizar la lista de descargas completadas
