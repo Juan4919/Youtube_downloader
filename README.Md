@@ -1,18 +1,25 @@
 # YouTube Downloader
 
-Esta aplicación es un descargador de YouTube construido con Python, que permite a los usuarios descargar videos o listas de reproducción completas de YouTube directamente a su PC. La interfaz gráfica está diseñada con Tkinter.
+Esta aplicación permite descargar videos o listas de reproducción de YouTube directamente a tu PC, usando una interfaz gráfica construida con Tkinter y la librería [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
 ## Características
 
-- Descarga de videos individuales de YouTube.
-- Descarga de listas de reproducción completas.
-- Visualización en tiempo real del progreso de descarga.
-- Muestra la velocidad de descarga y el tiempo restante.
+- Descarga de videos individuales de YouTube.  
+- Descarga de listas de reproducción completas.  
+- Descarga en la mejor calidad disponible (combina mejor video + mejor audio).  
+- Visualización en tiempo real del progreso de descarga.  
+- Muestra la velocidad de descarga y el tiempo restante.  
 - Lista las descargas completadas en la misma sesión.
 
 ## Requisitos Previos
 
-Para ejecutar esta aplicación, necesitas tener Python instalado en tu sistema además de varios paquetes que deben estar instalados, incluyendo tkinter, PIL, pytube y threading. 
+- **Python** (3.x recomendado)  
+- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)**  
+- **[Pillow (PIL)](https://pillow.readthedocs.io/)**  
+- **Tkinter** (generalmente incluido por defecto en Windows y macOS; en algunas distribuciones de Linux se instala con su gestor de paquetes)  
+- **threading** (parte de la biblioteca estándar de Python)
+- **ffmpeg** (recomendado para unir mejor video y audio en un solo archivo, aunque no obligatorio si usas formatos progresivos)
+
 
 ## Instalación
 
@@ -22,8 +29,8 @@ git clone URL_DEL_REPOSITORIO
 
 Instala las dependencias necesarias con:
 
+pip install yt-dlp
 pip install Pillow
-pip install pytube
 
 ## Uso
 
